@@ -706,7 +706,7 @@
         }
         update() {
             if (this.data.art !== null) {
-                this.img.setAttribute("src", this.data.art);
+                this.img.setAttribute("src", this.data.art.replace(/^http:\/\//, "https://"));
                 this.avatar.style.display = "none";
                 this.img.style.display = "initial";
             }
