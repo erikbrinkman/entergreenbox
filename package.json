@@ -1,0 +1,18 @@
+{
+  "name": "gmusictospot",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "Erik Brinkman <erik.brinkman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/gapi": "0.0.35",
+    "@types/gapi.auth2": "0.0.46",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}

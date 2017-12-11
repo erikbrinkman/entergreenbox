@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.lime-orange.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- FIXME Tweak color scheme to match spotify -->
+    <script defer src="https://apis.google.com/js/api.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Enter the Green Box</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a id="addall" class="mdl-button mdl-js-button mdl-button--icon" disabled>
+              <i class="material-icons">cloud_upload</i>
+            </a>
+            <div id="add-tooltip" class="mdl-tooltip" data-mdl-for="addall">
+              Add albums to Spotify
+            </div>
+            <a id="upload" class="mdl-button mdl-js-button mdl-button--icon" disabled>
+              <i class="material-icons">file_upload</i>
+            </a>
+            <div class="mdl-tooltip" data-mdl-for="upload">
+              Upload library description file
+            </div>
+            <!-- FIXME Change this to a logo -->
+            <a id="spotify" class="mdl-button mdl-js-button mdl-button--icon" disabled>
+              <i class="material-icons">person_outline</i>
+              <img style="display: none;" />
+            </a>
+            <div id="spotify-tooltip" class="mdl-tooltip" data-mdl-for="spotify">
+              Sign in to Spotify
+            </div>
+            <a id="help" class="mdl-button mdl-js-button mdl-button--icon" disabled>
+              <i class="material-icons">info</i>
+            </a>
+            <div class="mdl-tooltip" data-mdl-for="help">
+              Click the person to login to Spotify, the up arrow to upload a
+              file description of your library, and the cloud to sync
+              everything to your Spotify account.
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+      <ul id="item-list" class="mdl-list">
+      </ul>
+      </main>
+    </div>
+
+    <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+  </body>
+</html>

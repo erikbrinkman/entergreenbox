@@ -1,0 +1,20 @@
+#item-list .mdl-list__item-avatar {
+  border-radius: 0;
+  object-fit: contain;
+  background: none;
+  color: #757575;
+}
+
+.mdl-list__item-secondary-content {
+  flex-shrink: 0;
+}
+
+header img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.mdl-navigation .mdl-button {
+  margin: 0 0.1em;
+}
