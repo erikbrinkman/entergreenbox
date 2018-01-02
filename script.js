@@ -5,6 +5,7 @@
     // --------
     const toastElem = document.getElementById("toast");
     const addall = document.getElementById("addall");
+    const download = document.getElementById("download");
     const spotify = document.getElementById("spotify");
     const spotifyIcon = spotify.querySelector("i");
     const spotifyImg = spotify.querySelector("img");
@@ -524,6 +525,15 @@
             toast(err);
         }
     }
+    /** Enable download */
+    download.addEventListener("click", () => {
+        const blob = new Blob([JSON.stringify({
+                playlists: playlists.map(p => p.data),
+                albums: albums.map(a => a.data),
+            })], { type: "text/plain;charset=utf-8" });
+        saveAs(blob, "library.json");
+    });
+    download.removeAttribute("disabled");
     // -----
     // Items
     // -----

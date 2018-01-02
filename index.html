@@ -7,6 +7,7 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!-- FIXME Tweak color scheme to match spotify -->
     <script defer src="https://apis.google.com/js/api.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
@@ -27,6 +28,12 @@
             </a>
             <div class="mdl-tooltip" data-mdl-for="upload">
               Upload library description file
+            </div>
+            <a id="download" class="mdl-button mdl-js-button mdl-button--icon" disabled>
+              <i class="material-icons">file_download</i>
+            </a>
+            <div class="mdl-tooltip" data-mdl-for="download">
+              Download current description file
             </div>
             <!-- FIXME Change this to a logo -->
             <a id="spotify" class="mdl-button mdl-js-button mdl-button--icon" disabled>
